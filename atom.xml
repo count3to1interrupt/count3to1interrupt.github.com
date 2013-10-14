@@ -4,7 +4,7 @@
   <title><![CDATA[Study Times]]></title>
   <link href="http://count3to1interrupt.github.com/atom.xml" rel="self"/>
   <link href="http://count3to1interrupt.github.com/"/>
-  <updated>2013-10-14T20:58:12+09:00</updated>
+  <updated>2013-10-14T21:02:00+09:00</updated>
   <id>http://count3to1interrupt.github.com/</id>
   <author>
     <name><![CDATA[count3to1]]></name>
@@ -26,9 +26,12 @@
 
 <h4>社会保険労務士の仕事は主に３つ！</h4>
 
-<p>+1号業務
-+2号業務
-+3号業務</p>
+<ul>
+<li>1号業務</li>
+<li>2号業務</li>
+<li>3号業務</li>
+</ul>
+
 
 <h4>社会的ニーズが上昇中！</h4>
 
