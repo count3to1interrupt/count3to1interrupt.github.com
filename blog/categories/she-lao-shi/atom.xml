@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Study Times]]></title>
-  <link href="http://count3to1interrupt.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 社労士 | Study Times]]></title>
+  <link href="http://count3to1interrupt.github.com/blog/categories/she-lao-shi/atom.xml" rel="self"/>
   <link href="http://count3to1interrupt.github.com/"/>
   <updated>2013-10-14T20:37:08+09:00</updated>
   <id>http://count3to1interrupt.github.com/</id>

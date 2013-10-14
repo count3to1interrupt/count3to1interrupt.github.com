@@ -8,10 +8,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>サーバサイドでバナーの表示/非表示を切り替えるサンプル - Study Times</title>
+    <title>社会保険労務士（社労士）とは？ - Study Times</title>
     <meta name="author" content="count3to1">
     
-    <meta name="description" content="サーバサイドでバナーの表示/非表示を切り替えるサンプル">
+    <meta name="description" content="社会保険労務士（社労士）とは？">
     
     <meta name="viewport" content="width=device-width">
     
@@ -58,7 +58,7 @@
           <article class="post">
   <header>
   
-  <h1 class="title indent">サーバサイドでバナーの表示/非表示を切り替えるサンプル</h1>
+  <h1 class="title indent">社会保険労務士（社労士）とは？</h1>
   
 
   
@@ -85,31 +85,9 @@
     <i class="icon-tags"></i>
     <ul class="tags unstyled">
     
-      <li><a href="/blog/categories/Objective-C/">Objective-C</a></li>
+      <li><a href="/blog/categories/社労士/">社労士</a></li>
     
-      <li><a href="/blog/categories/AdMob/">AdMob</a></li>
-    
-      <li><a href="/blog/categories/iAd/">iAd</a></li>
-    
-      <li><a href="/blog/categories/Nend/">Nend</a></li>
-    
-      <li><a href="/blog/categories/Download/">Download</a></li>
-    
-      <li><a href="/blog/categories/iPhone/">iPhone</a></li>
-    
-      <li><a href="/blog/categories/iOS/">iOS</a></li>
-    
-      <li><a href="/blog/categories/Sample/">Sample</a></li>
-    
-      <li><a href="/blog/categories/StoreKit/">StoreKit</a></li>
-    
-      <li><a href="/blog/categories/NSURL/">NSURL</a></li>
-    
-      <li><a href="/blog/categories/NSURLConnection/">NSURLConnection</a></li>
-    
-      <li><a href="/blog/categories/NSMutableURLRequest/">NSMutableURLRequest</a></li>
-    
-      <li><a href="/blog/categories/PHP/">PHP</a></li>
+      <li><a href="/blog/categories/独学/">独学</a></li>
     
     </ul>
   </div>
@@ -123,123 +101,9 @@
 
 
 
-  <p>Objective-Cで PHPのフラグを見てバナーの表示/非表示を切り替えるサンプルを GitHubに公開しました。</p>
+  <h1>社会保険労務士（社労士）とは</h1>
 
-<p>iPhoneアプリ公開後でも PHPの編集のみでバナーの表示と非表示を切り替えられますので、例えば有料アプリの無料セール中のみバナーを表示するという事が可能になります。</p>
-
-<p>下記よりサンプルのダウンロードが行えます。</p>
-
-<h2>サンプルダウンロード</h2>
-
-<p><a href="https://github.com/masakihirokawa/objc-server-linked-banner">https://github.com/masakihirokawa/objc-server-linked-banner</a></p>
-
-<h2>導入手順</h2>
-
-<h3>1. バナーの表示/非表示フラグを持つ簡易PHPをサーバに配置</h3>
-
-<p>1を指定でバナー表示、0を指定でバナーを非表示にします。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
-</span><span class='line'>    <span class="k">echo</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>2. バナーの表示フラグをグローバル定義</h3>
-
-<p>*.pchファイルにバナーの表示フラグをグローバル変数として定義します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="kt">BOOL</span> <span class="n">isShowBanner</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>3. アプリ起動時に PHPのフラグを取得し、バナー表示フラグ初期化</h3>
-
-<p>AppDelegate.m を以下のように編集します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">didFinishLaunchingWithOptions:</span><span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">launchOptions</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="c1">// バナー表示設定初期化</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">self</span> <span class="n">initBannerSetting</span><span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">return</span> <span class="n">YES</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initBannerSetting</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="c1">// PHPの URLを指定</span>
-</span><span class='line'>    <span class="n">NSString</span> <span class="o">*</span><span class="n">url</span> <span class="o">=</span> <span class="s">@&quot;http://dolice.net/sample/server_linked_banner.php&quot;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">NSMutableURLRequest</span> <span class="o">*</span><span class="n">reqest</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableURLRequest</span> <span class="nl">requestWithURL:</span><span class="p">[</span><span class="n">NSURL</span> <span class="nl">URLWithString:</span><span class="n">url</span><span class="p">]];</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">reqest</span> <span class="nl">setHTTPMethod:</span><span class="s">@&quot;GET&quot;</span><span class="p">];</span>
-</span><span class='line'>    <span class="n">NSURLConnection</span> <span class="o">*</span><span class="n">connection</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSURLConnection</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithRequest:</span><span class="n">reqest</span> <span class="nl">delegate:</span><span class="n">self</span><span class="p">];</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">connection</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">response</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">NSError</span> <span class="o">*</span><span class="n">err</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">NSData</span> <span class="o">*</span><span class="n">responseData</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLConnection</span> <span class="nl">sendSynchronousRequest:</span><span class="n">reqest</span> <span class="nl">returningResponse:</span><span class="o">&amp;</span><span class="n">response</span> <span class="nl">error:</span><span class="o">&amp;</span><span class="n">err</span><span class="p">];</span>
-</span><span class='line'>        <span class="n">NSString</span> <span class="o">*</span><span class="n">responseStr</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData:</span><span class="n">responseData</span> <span class="nl">encoding:</span><span class="n">NSUTF8StringEncoding</span><span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c1">// サーバから取得した値が 1ならバナー表示フラグを立てる</span>
-</span><span class='line'>        <span class="n">isShowBanner</span> <span class="o">=</span> <span class="p">[</span><span class="n">responseStr</span> <span class="n">intValue</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>4. サーバから取得したフラグを見てバナー表示</h3>
-
-<p>ViewControllerの viewWillAppearメソッドからバナーの表示フラグを見て、もしフラグが立っていればバナーを表示します。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewWillAppear:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">animated</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="c1">// バナー表示</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">isShowBanner</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="n">NSInteger</span> <span class="n">bannerY</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="mi">50</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">[[</span><span class="n">DCBanner</span> <span class="n">sharedManager</span><span class="p">]</span> <span class="nl">showAdBanner:</span><span class="n">self</span> <span class="nl">yPos:</span><span class="n">bannerY</span><span class="p">];</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+<p>社会保険労務士（社労士）とは、なんまいだああ</p>
 
 
 </article>
@@ -277,7 +141,7 @@
   <ul class="divided">
     
       <li class="post">
-        <a href="/blog/2013/10/10/sample/">サーバサイドでバナーの表示/非表示を切り替えるサンプル</a>
+        <a href="/blog/2013/10/10/sample/">社会保険労務士（社労士）とは？</a>
       </li>
     
   </ul>
